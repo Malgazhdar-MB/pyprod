@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+<a href="{% url 'home' %}"></a>
+-->
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My amazing site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    {% include '_navbar.html' %}
+</head>
+<body>
+
+{% block content %} {% endblock %}
+
+</body>
+<footer>
+	<div class="footer1">
+		<div class="contacts">
+			<h3>Contacts</h3>
+			<p>Omicron, Co.</p>
+			<p>402388 Jaibek street 257</p>
+			<p> Almaty, AL 080807, Kazakhstan</p>
+			<p>Tel: +770946704867</p>
+			<p>Email: helpdesk@omicron.kz</p>
+		</div>
+		<div class="social">
+			<h3>{{ title }}</h3>
+			<p>Vestibulum lorem sed risus ultricies tristique nulla. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Quis imperdiet massa tincidunt nunc pulvinar sapien.</p>
+			<div class="footer-images">
+				<a href="#"><img src="{% static 'img/fb-logo.png' %}"> </a>
+				<a href="#"><img src="{% static 'img/insta-logo.png' %}"> </a>
+				<a href="#"><img src="{% static 'img/mail-logo.png' %}"> </a>
+				<a href="#"><img src="{% static 'img/twit-logo.png' %}"> </a>
+				<a href="#"><img src="{% static 'img/youtube-logo.png' %}"> </a>
+				<a href="#"><img src="{% static 'img/linked-logo.png' %}"> </a>
+			</div>
+		</div>	
+	</div>
+	<div class="footer2">
+		<label style="font-size: 12px;">Copyright © 2020 Omicron Co. All rights reverved</label><br>
+		<a href="#"><label style="font-size: 12px;">Privacy | Terms of Use</label></a>
+	</div>
+</footer>
+<script src="{% static 'js/1.js' %}"></script>
+</html>

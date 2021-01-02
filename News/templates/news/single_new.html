@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} {{ new.title }} {% endblock %}
+
+{% block content %}
+
+<h2 id="hood"> {{new.title}} </h2>
+
+<div class="card" style="width: 900px;">
+  <div class="card-body">
+    <h5 class="card-title">{{new.title}}</h5>
+    <p class="paragraf">{{new.content|linebreaksbr}}</p>
+    <img src="{{ new.photo.url }}" style="width: 800px;"><br>
+    <label style="font-size: 12px;">{{new.create_date | date:'d-M H:i'}}</label><br>
+  </div>
+</div>
+
+{% endblock %}
