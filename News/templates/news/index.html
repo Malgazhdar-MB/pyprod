@@ -6,10 +6,10 @@
 
 {% for item in news %}
 <div class="card" id="hood" style="max-width: 1000px;">
-  <h3 class="card-title" id="cont">{{item.title}}</h3>
-  <p class="paragraf">{{item.content|linebreaksbr|truncatewords:50}}</p>
-  <img src="/photos/{{item.photo}}" style="max-width: 800px;"><br>
-  <label style="font-size: 12px;">{{item.create_date | date:'d-M H:i'}}</label><br>
+  <h3 class="card-title" id="cont" style="width: 96%;">{{item.title}}</h3>
+  <p class="paragraf" style="width: 96%;">{{item.content|linebreaksbr|truncatewords:50}}</p>
+  <img src="/photos/{{item.photo}}" class="news-img" style="width: 96%;"><br>
+  <label style="font-size: 12px;" class="news-data">{{item.create_date | date:'d-M H:i'}}</label><br>
   <a href="{{item.get_absolute_url}}" class="btn-news">Читать дальше</a>
 </div>
 {% endfor %}

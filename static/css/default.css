@@ -7,8 +7,10 @@
 body{ background-color: #FFFAC4; }
 
 .paragraf{
-	font-size: 30px;
+	font-size: 16px;
 	padding: 2% 5%;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 li, a, button {
@@ -19,9 +21,12 @@ li, a, button {
 	color: #fc893d;
 }
 
+#hood { padding: 20px;}
+
 h3{
 	font-family: Copperplate;
-	font-size: 18px; 
+	font-size: 18px;
+	text-align: center;
 }
 
 header {
@@ -32,6 +37,11 @@ header {
 	justify-content: flex-end;
 	align-items: center;
 	margin-top: 0;
+}
+
+.card{ margin: 10px;}
+.card h3, p, .news-img, .news-data, .btn-news{
+	margin: 0px 10%;
 }
 
 .sticky {
@@ -112,3 +122,19 @@ footer {
 .footer2 { text-align: center; }
 .footer2 a, label { color: grey; }
 .footer2 a:hover{ color: red; }
+
+form {
+	display: inline-grid;
+	width: 70%;
+	margin: 0px 15%;
+}
+form textarea { width: 100%; }
+form label {
+	margin-right: 30px;
+}
+form input, textarea, select{
+	float: right;
+	margin-top: 5px;
+}
+
+form button { margin: 30px 130px;}
