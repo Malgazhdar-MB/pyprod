@@ -4,10 +4,10 @@
 
 {% block content %}
 
-<div class="card" style="max-width: 1000px;">
-    <h3 class="card-title" id="hood" style="width: 80%;">{{new.title}}</h5>
-    <p class="paragraf" style="width: 80%;">{{new.content|linebreaksbr}}</p>
-    <img src="{{ new.photo.url }}" style="width: 80%;"><br>
+<div class="card" id="cont" style="max-width: 1000px;">
+    <h3 class="card-title" style="width: 96%;">{{new.title}}</h5>
+    <p id="paragraf" style="width: 96%;">{{new.content|linebreaksbr}}</p>
+    <img src="/photos/{{item.photo}}" class="news-img" style="width: 96%;"><br>
     <label style="font-size: 12px;" class="news-data">{{new.create_date | date:'d-M H:i'}}</label><br>
 </div>
 

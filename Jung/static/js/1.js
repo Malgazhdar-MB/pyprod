@@ -5,7 +5,7 @@ window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
-var paragraf = document.getElementById("hood");
+var paragraf = document.getElementById("cont");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -13,7 +13,7 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-    paragraf.style.marginTop = 50 + 'px'
+    paragraf.style.marginTop = 70 + 'px'
 
   } else {
     navbar.classList.remove("sticky");
